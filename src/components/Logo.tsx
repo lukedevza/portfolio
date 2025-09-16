@@ -14,7 +14,7 @@ const Logo = ({
   return (
     <Link
       href="/"
-      className="flex items-center space-x-1.5 px-2  text-gray-400 hover:text-white"
+      className="flex items-center space-x-1.5 px-2 text-gray-400  hover:text-white"
     >
       <CodeIcon size={iconSize} />
       <h1 className={titleStyles}>{title}</h1>

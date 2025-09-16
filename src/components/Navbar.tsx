@@ -1,6 +1,8 @@
+"use client";
 import { NAVLINKS } from "@/constants";
 import { Fira_Code } from "next/font/google";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
@@ -8,6 +10,7 @@ const firaCode = Fira_Code({
 });
 
 const Navbar = () => {
+  const path = usePathname();
   return (
     <div className="hidden md:flex items-center justify-center gap-8 lg:gap-20 px-8 flex-1">
       {NAVLINKS.map((link, index) => (
@@ -18,7 +21,13 @@ const Navbar = () => {
         >
           <span className="self-end text-xs text-gray-500 -mb-1">0{index + 1}</span>
 
-          <span className="text-xl font-medium text-gray-400  hover:text-white">{link.name}</span>
+          <span
+            className={`${
+              path === link.path && "text-white"
+            } text-xl font-medium text-gray-400  hover:text-white`}
+          >
+            {link.name}
+          </span>
         </Link>
       ))}
     </div>

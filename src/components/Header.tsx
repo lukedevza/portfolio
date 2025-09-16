@@ -11,8 +11,8 @@ const Header = () => {
     <motion.header
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
-      transition={{ type: "tween" }}
-      className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-4 bg-transparent"
+      transition={{ duration: 1 }}
+      className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-4 bg-[#0a0a0a] sm:bg-transparent"
     >
       <Logo
         title="luke storti"
