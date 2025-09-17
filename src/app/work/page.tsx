@@ -2,7 +2,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import React from "react";
-import { motion } from "framer-motion";
+
 import MobileProjects from "@/components/MobileProjects";
 const Work = () => {
   return (
@@ -14,22 +14,11 @@ const Work = () => {
       </div>
 
       <MaxWidthWrapper className="z-10 relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 4 }}
-        >
-          <h1 className="text-white text-2xl md:text-5xl lg:text-7xl font-semibold">
-            {"< Projects />"}
-          </h1>
-        </motion.div>
+        <h1 className="text-white text-2xl md:text-5xl lg:text-7xl font-semibold">
+          {"< Projects />"}
+        </h1>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 4 }}
-          className="mt-8 flex flex-col items-center justify-center "
-        >
+        <div className="mt-8 flex flex-col items-center justify-center ">
           <p className="text-gray-300 font-semibold text-sm pb-2 text-center">
             Please note: Some of these projects rely on services that are no longer active or are
             incomplete.
@@ -37,7 +26,7 @@ const Work = () => {
           </p>
           <ProjectsCarousel />
           <MobileProjects />
-        </motion.div>
+        </div>
       </MaxWidthWrapper>
     </div>
   );

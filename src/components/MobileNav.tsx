@@ -14,6 +14,7 @@ import Link from "next/link";
 import ResumeButton from "./ResumeButton";
 import { Fira_Code } from "next/font/google";
 import Logo from "./Logo";
+import GitHubButton from "./GitHubButton";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
@@ -53,6 +54,7 @@ const MobileNav = () => {
             ))}
           </div>
           <ResumeButton />
+          <GitHubButton />
         </SheetContent>
       </Sheet>
     </div>
