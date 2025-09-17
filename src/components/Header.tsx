@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import ResumeButton from "./ResumeButton";
 import { motion } from "framer-motion";
 import MobileNav from "./MobileNav";
+import GitHubButton from "./GitHubButton";
 
 const Header = () => {
   return (
@@ -21,8 +22,9 @@ const Header = () => {
       />
       <div className="flex items-center justify-center flex-1 ">
         <Navbar />
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-2">
           <ResumeButton />
+          <GitHubButton />
         </div>
       </div>
       <MobileNav />
