@@ -146,9 +146,9 @@ const About = () => {
   return (
     <MaxWidthWrapper className="sm:overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 4 }}
         className="flex flex-col "
       >
         <div className="flex justify-between items-center  mb-5">

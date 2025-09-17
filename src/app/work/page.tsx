@@ -1,5 +1,8 @@
+"use client";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import ProjectsCarousel from "@/components/ProjectsCarousel";
 import React from "react";
-
+import { motion } from "framer-motion";
 const Work = () => {
   return (
     <div className="relative h-screen">
@@ -9,9 +12,31 @@ const Work = () => {
         </div>
       </div>
 
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
-        <h2 className="text-white">WORK</h2>
-      </div>
+      <MaxWidthWrapper className="z-10 relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4 }}
+        >
+          <h1 className="text-white text-2xl md:text-5xl lg:text-7xl font-semibold">
+            {"< Projects />"}
+          </h1>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4 }}
+          className="mt-8 hidden md:flex flex-col items-center justify-center "
+        >
+          <p className="text-gray-300 font-semibold text-sm pb-2 text-center">
+            Please note: Some of these projects rely on services that are no longer active or are
+            incomplete.
+            <br /> While the live demo may be limited, the codebase is fully accessible.
+          </p>
+          <ProjectsCarousel />
+        </motion.div>
+      </MaxWidthWrapper>
     </div>
   );
 };
