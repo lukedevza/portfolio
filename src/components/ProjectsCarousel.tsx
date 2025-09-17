@@ -12,7 +12,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectsCarousel = () => {
   return (
     <Carousel
-      className="flex"
+      className="hidden md:flex"
       opts={{
         align: "start",
         loop: true,
