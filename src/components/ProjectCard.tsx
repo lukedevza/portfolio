@@ -13,12 +13,12 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, subTitle, image, github, link }: ProjectCardProps) => {
   return (
-    <Card className="bg-[#0a0a0a] h-[600px] flex flex-col items-center">
+    <Card className="bg-[#0a0a0a] h-[400px] md:h-[600px] flex flex-col items-center">
       <CardContent>
         <div className="flex flex-col items-center mt-2 md:mt-0 space-y-4 text-white">
           <h4 className="text-xl font-bold text-center overflow-hidden">{title}</h4>
           <p className="text-center text-sm overflow-hidden text-gray-400">{subTitle}</p>
-          <div className="relative w-[350px] h-[350px]">
+          <div className="relative w-[150px] md:w-[350px] h-[150px] md:h-[350px]">
             <Image
               src={image}
               alt="thumbnail"

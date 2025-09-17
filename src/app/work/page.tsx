@@ -3,6 +3,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import React from "react";
 import { motion } from "framer-motion";
+import MobileProjects from "@/components/MobileProjects";
 const Work = () => {
   return (
     <div className="relative h-screen">
@@ -27,7 +28,7 @@ const Work = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4 }}
-          className="mt-8 hidden md:flex flex-col items-center justify-center "
+          className="mt-8 flex flex-col items-center justify-center "
         >
           <p className="text-gray-300 font-semibold text-sm pb-2 text-center">
             Please note: Some of these projects rely on services that are no longer active or are
@@ -35,6 +36,7 @@ const Work = () => {
             <br /> While the live demo may be limited, the codebase is fully accessible.
           </p>
           <ProjectsCarousel />
+          <MobileProjects />
         </motion.div>
       </MaxWidthWrapper>
     </div>
