@@ -59,4 +59,13 @@ export const PROJECTDATA = [
     github: "https://github.com/lukedevza/FitHub",
     link: "https://fithubgymapp.netlify.app",
   },
+  {
+    id: 7,
+    title: "Travely",
+    image: "/images/travely.png",
+    subTitle:
+      "Travely is a web application that helps users plan their trips with ease. Add locations to your trip, see them appear on an interactive map, and organize your adventures all in one place.",
+    github: "https://github.com/lukedevza/travely",
+    link: "https://travely-teal.vercel.app/",
+  },
 ];
