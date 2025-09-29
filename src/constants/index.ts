@@ -68,4 +68,13 @@ export const PROJECTDATA = [
     github: "https://github.com/lukedevza/travely",
     link: "https://travely-teal.vercel.app/",
   },
+  {
+    id: 8,
+    title: "NoteCode",
+    image: "/images/notecode.png",
+    subTitle:
+      "NoteCode is a simple web application that allows you to write, edit, and share code snippets with others. ",
+    github: "https://github.com/lukedevza/note-code",
+    link: "https://note-code-three.vercel.app",
+  },
 ];
